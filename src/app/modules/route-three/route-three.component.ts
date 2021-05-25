@@ -22,6 +22,7 @@ export class RouteThreeComponent implements OnInit {
   }
 
   public startStopChange(isStarted: boolean): void {
+    // Todo Optimize this using switchMaps
     if (isStarted && this.firstStart) {
       this.firstStart = false;
       this.timer$ = timer(0, 1000).pipe(
