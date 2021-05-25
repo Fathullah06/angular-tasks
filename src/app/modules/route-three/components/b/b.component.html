@@ -1,0 +1,13 @@
+<div class="b-component">
+  <div>
+    Enter Time Limit: 
+    <input type="number" name="timer" id="timer" [(ngModel)]="timer" (ngModelChange)="inputChange.emit(timer)">
+  </div>
+  <div class="b-component__btns">
+    <button type="button" (click)="startStopTimer()"> Start/Stop </button>
+    <button type="button" (click)="reset()"> Reset </button>
+  </div>
+  <div  *ngFor="let pausedAtTime of pausedList">
+    Paused at {{pausedAtTime}}
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="route-five">
+  <table>
+    <tr>
+      <th (click)="sort('name')">Name</th>
+      <th (click)="sort('class')">Class</th>
+      <th (click)="sort('section')">Section</th>
+      <th (click)="sort('sub1')">Sub1</th>
+      <th (click)="sort('sub2')">Sub2</th>
+      <th (click)="sort('sub3')">Sub3</th>
+    </tr>
+    <tr *ngFor="let student of students">
+      <td>{{student.name}}</td>
+      <td>{{student.class}}</td>
+      <td>{{student.section}}</td>
+      <td>{{student.sub1}}</td>
+      <td>{{student.sub2}}</td>
+      <td>{{student.sub3}}</td>
+    </tr>
+  </table>
+</div>

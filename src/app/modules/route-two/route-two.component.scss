@@ -1,0 +1,73 @@
+.route2-box {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+  
+    .sorting-box {
+      display: flex;
+      margin-bottom: 10px;
+      justify-content: flex-end;
+      .grid-option {
+        display: flex;
+        margin-right: 10px;
+        background: yellow;
+        border-radius: 5px;
+        padding: 3px 10px;
+        gap: 4px;
+        width: 100px;
+        span {
+          background: black;
+          height: 4px;
+          width: 100%;
+          display: block;
+          margin: 2px;
+        }
+        .grid-btn {
+          border-right: 2px solid black;
+          width: 50%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          span {
+            width: 13px;
+            height: 10px;
+            margin: 0;
+          }
+        }
+        .list-btn {
+          width: 50%;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .products {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      .product-box {
+        margin-bottom: 20px;
+        border: solid 2px #000;
+        width: 21%;
+        height: 115px;
+        display: flex;
+        justify-content: space-between;
+        span {
+          background: #a6b9a6;
+          padding: 10px;
+        }
+      }
+      &.products-list {
+        .product-box {
+          width: 48%;
+        }
+      }
+    }
+  }
+  

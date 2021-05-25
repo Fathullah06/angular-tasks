@@ -1,0 +1,18 @@
+<div class="route-three">
+  <div class="route-three__container">
+    <div>
+      <app-a [timer]="timer$"></app-a>
+    </div>
+    <div>
+      <app-b [pausedAt]="lastValue" (inputChange)="timer = $event" (startStopChange)="startStopChange($event)" (resetChange)="reset()"></app-b>
+    </div>
+  </div>
+  <div class="route-three__container">
+    <div>
+      <app-c [logs]="logs"></app-c>
+    </div>
+    <div>
+      <app-d [startCount]="startCount" [pauseCount]="pauseCount"></app-d>
+    </div>
+  </div>
+</div>

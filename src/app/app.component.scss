@@ -1,0 +1,11 @@
+.app-main {
+    .nav-list {
+        display: inline;
+        padding: 20px;
+        .link {
+            text-decoration: none;
+            font-size: 1rem;
+            list-style: none;
+        }
+    }
+}
